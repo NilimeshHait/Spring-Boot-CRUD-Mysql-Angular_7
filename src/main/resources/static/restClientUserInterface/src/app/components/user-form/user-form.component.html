@@ -1,0 +1,22 @@
+<div class="container">
+  <form (ngSubmit)="processForm()">
+    <div class="form group">
+        <label for="fname">Id</label>
+      <input type="text" name="id" class="form-control" [(ngModel)]="user.id" disabled>
+  </div>
+  <div class="form group">
+    <label for="fname">First Name</label>
+    <input type="text" name="fname" class="form-control" [(ngModel)]="user.fname">
+  </div>
+  <div class="form group">
+      <label for="lname">Last Name</label>
+      <input type="text" name="lname" class="form-control" [(ngModel)]="user.lname">
+  </div>
+  <div>
+      <br>
+      <input type="submit" value="Save" class="btn btn-success mr-2">
+      <input (click)="backPrev()" type="submit"  value="Back" class="btn btn-info">
+  </div>
+  
+  </form>
+</div>
